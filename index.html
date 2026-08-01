@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пошук фільмів і серіалів</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="logo">MovieSearch</h1>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Пошук фільмів та серіалів...">
+                <button id="searchBtn" class="btn">Шукати</button>
+            </div>
+        </header>
+
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><button class="nav-btn active" id="topMoviesBtn">Топ фільмів</button></li>
+                <li><button class="nav-btn" id="topTvBtn">Топ серіалів</button></li>
+                <li><button class="nav-btn" id="genresBtn">Жанри</button></li>
+                <li><button class="nav-btn" id="favoritesBtn">❤ Вподобане</button></li>
+            </ul>
+        </nav>
+
+        <div class="genres-filter" id="genresFilter">
+            <p class="filter-title">Оберіть жанр:</p>
+            <div class="genres-list" id="genresList"></div>
+            <div class="type-toggle">
+                <button class="type-btn active" id="movieTypeBtn">Фільми</button>
+                <button class="type-btn" id="tvTypeBtn">Серіали</button>
+            </div>
+        </div>
+
+        <div class="results-info" id="resultsInfo"></div>
+
+        <div class="movies-grid" id="moviesGrid"></div>
+
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <button class="modal-close" id="modalClose">×</button>
+                <div class="modal-body" id="modalBody"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
